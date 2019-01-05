@@ -1,0 +1,11 @@
+[package]
+name = "just-versions"
+version = "0.1.0"
+authors = ["Randy Schütt <rswhite4@googlemail.com>"]
+edition = "2018"
+
+[dependencies]
+just-core = {path = "../just-core"}
+regex = "1.1.0"
+itertools = "0.8.0"
+semver= "0.9"
