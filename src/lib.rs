@@ -1,21 +1,17 @@
 use just_core::blueprint::instruction::Versions;
 use semver::{Version, VersionReq};
 
-pub fn find_matching_version(versions: &Versions, req: Option<&VersionReq>) -> Option<Version> {
+pub fn find_matching_version(versions: &Versions, req: Option<VersionReq>) -> Option<Version> {
     if let Some(constraint) = req {
         find_all_versions(versions)
             .iter()
             .find(|version| constraint.matches(version))
             .map(|version| version.to_owned())
     } else {
-        find_latest_version(versions)
+        find_all_versions(versions)
+            .first()
+            .map(|version| version.to_owned())
     }
-}
-
-pub fn find_latest_version(versions: &Versions) -> Option<Version> {
-    find_all_versions(versions)
-        .first()
-        .map(|version| version.to_owned())
 }
 
 pub fn find_all_versions(versions: &Versions) -> Vec<Version> {
