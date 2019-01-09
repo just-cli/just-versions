@@ -1,4 +1,4 @@
-use just_core::blueprint::instruction::Versions;
+use just_core::manifest::Versions;
 use semver::{Version, VersionReq};
 
 pub fn find_matching_version(versions: &Versions, req: Option<VersionReq>) -> Option<Version> {
