@@ -5,7 +5,7 @@ authors = ["Randy Schütt <rswhite4@googlemail.com>"]
 edition = "2018"
 
 [dependencies]
-just-core = {path = "../just-core"}
+just-core = { git = "https://github.com/just-cli/just-core" }
 regex = "1.1.0"
 itertools = "0.8.0"
 semver= "0.9"

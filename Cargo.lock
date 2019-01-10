@@ -48,6 +48,7 @@ dependencies = [
 [[package]]
 name = "just-core"
 version = "0.1.0"
+source = "git+https://github.com/just-cli/just-core#dcd7d8a411ff2f6ab0edbf2373e10bd26630bc24"
 dependencies = [
  "duct 0.11.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -63,7 +64,7 @@ name = "just-versions"
 version = "0.1.0"
 dependencies = [
  "itertools 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "just-core 0.1.0",
+ "just-core 0.1.0 (git+https://github.com/just-cli/just-core)",
  "regex 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "semver 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -300,6 +301,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum duct 0.11.1 (registry+https://github.com/rust-lang/crates.io-index)" = "f87f5af80601599209bff21146e4113e8c54471151049deebc37e75b78e42729"
 "checksum either 1.5.0 (registry+https://github.com/rust-lang/crates.io-index)" = "3be565ca5c557d7f59e7cfcf1844f9e3033650c929c6566f511e8005f205c1d0"
 "checksum itertools 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)" = "5b8467d9c1cebe26feb08c640139247fac215782d35371ade9a2136ed6085358"
+"checksum just-core 0.1.0 (git+https://github.com/just-cli/just-core)" = "<none>"
 "checksum lazy_static 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "a374c89b9db55895453a74c1e38861d9deec0b01b405a82516e9d5de4820dea1"
 "checksum lazycell 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "b294d6fa9ee409a054354afc4352b0b9ef7ca222c69b8812cbea9e7d2bf3783f"
 "checksum libc 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)" = "023a4cd09b2ff695f9734c1934145a315594b7986398496841c7031a5a1bbdbd"
